@@ -1,0 +1,79 @@
+# ==== Python (cache & artefacts) ====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==== Environnements virtuels ====
+.venv/
+venv/
+env/
+ENV/
+
+# ==== Notebooks ====
+.ipynb_checkpoints/
+
+# ==== Build / Packaging ====
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# ==== Tests / Qualité ====
+.pytest_cache/
+.coverage*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==== Logs ====
+logs/
+*.log
+
+# ==== OS ====
+.DS_Store
+Thumbs.db
+
+# ==== IDE / Editeurs ====
+.vscode/
+.idea/
+*.iml
+
+# ==== Secrets / Config locales ====
+.env
+.env.*
+*.secret
+secrets*.json
+
+# ==== Données & sorties volumineuses (ne pas versionner) ====
+data/
+datasets/
+outputs/
+results/
+tmp/
+temp/
+
+# Garder les dossiers vides avec un placeholder si besoin
+!data/.keep
+!outputs/.keep
+!results/.keep
+
+# ==== Imagerie médicale & scènes Slicer (gros binaires) ====
+*.nii
+*.nii.gz
+*.nrrd
+*.nhdr
+*.mha
+*.mhd
+*.raw
+*.dcm
+*.mrb
+*.mrml
+
+# ==== Maillages / exports 3D (si générés) ====
+outputs/**/*.stl
+outputs/**/*.obj
+outputs/**/*.ply
+
+# ==== Slicer autosave / logs ====
+*.sqbr
+Slicer-*.log
